@@ -110,7 +110,7 @@ if (program.daemonize) {
     let presetPath;
 
     if (!program.uiHighlightPreset) {
-      presetPath = path.join(__dirname, 'preset', 'default.json');
+      presetPath = path.join(__dirname, 'preset', 'openhab.json');
     } else {
       presetPath = path.resolve(untildify(program.uiHighlightPreset));
     }

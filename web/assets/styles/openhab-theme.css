@@ -21,15 +21,20 @@ body {
 }
 
 .navbar .navbar-brand::before {
-  content: "openHAB Log Viewer (frontail)";
+  content: "openHAB - Frontail";
   font-size: 150%;
   padding-right: 30px;
 }
 
-.navbar .text-right::before {
-  color: white;
-  content: "Pause/Play Log";
-  font-size: 100%;
+.btn-pause {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%237f8289' viewBox='0 0 8 8'><path d='M1 1v6h2v-6h-2zm4 0v6h2v-6h-2z'></path></svg>") no-repeat center center;
+  background-color: #e2e6ea;
+  border: 1px solid transparent;
+}
+
+.btn-pause.play {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%237f8289' viewBox='0 0 8 8'><path d='M1 1v6l6-3-6-3z'></path></svg>") no-repeat center center;
+  background-color: #e2e6ea;
 }
 
 .form-control {
